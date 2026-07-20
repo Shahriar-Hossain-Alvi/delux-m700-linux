@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delux-m700"
+version = "0.1.0"
+description = "Native Linux utility for configuring the Delux M700/M700A gaming mouse"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Md. Shahriar Hossain Alvi" }
+]
+
+dependencies = [
+    "hidapi>=0.15"
+]
+
+keywords = [
+    "mouse",
+    "hid",
+    "linux",
+    "gaming",
+    "delux"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/<YOUR_USERNAME>/delux-m700-linux"
+Issues = "https://github.com/<YOUR_USERNAME>/delux-m700-linux/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
